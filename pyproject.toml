@@ -1,6 +1,6 @@
 [project]
 name = "iflow-mcp_freepik-company-freepik-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "FastMCP server for integrating with Freepik APIs"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-freepik-fastmcp = "main:main"
+freepik-fastmcp = "iflow_mcp_freepik_company_freepik_mcp.main:main"
 
 [dependency-groups]
 dev = [

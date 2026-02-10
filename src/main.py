@@ -5,7 +5,7 @@ A professionally structured MCP server for Freepik API integration.
 Built with Domain-Driven Design principles for maintainability and clarity.
 """
 
-from src.application.server_factory import ServerFactory
+from application.server_factory import ServerFactory
 
 # Create the server instance using factory pattern
 # This needs to be a module-level variable for FastMCP to find it
