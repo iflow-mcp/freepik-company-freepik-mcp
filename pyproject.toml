@@ -1,6 +1,10 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "iflow-mcp_freepik-company-freepik-mcp"
-version = "0.1.1"
+version = "0.1.4"
 description = "FastMCP server for integrating with Freepik APIs"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -15,6 +19,12 @@ dependencies = [
 
 [project.scripts]
 freepik-fastmcp = "iflow_mcp_freepik_company_freepik_mcp.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [dependency-groups]
 dev = [
